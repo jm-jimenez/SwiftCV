@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: pwd
+      run: echo pwd
       run: >
         xcodebuild -scheme SwiftCV -sdk iphonesimulator -destination name=iphone-${{ runner.name }}
         build-for-testing | xcbeautify
