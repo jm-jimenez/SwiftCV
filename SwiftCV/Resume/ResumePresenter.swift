@@ -9,6 +9,7 @@ import DependencyResolver
 
 protocol ResumePresenterProtocol {
     func goToPersonalData()
+    func goToExperience()
 }
 
 final class ResumePresenter {
@@ -18,5 +19,9 @@ final class ResumePresenter {
 extension ResumePresenter: ResumePresenterProtocol {
     func goToPersonalData() {
         navigation.goToPersonalData()
+    }
+
+    func goToExperience() {
+        navigation.goToExperience()
     }
 }

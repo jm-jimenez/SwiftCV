@@ -6,20 +6,38 @@
 //
 
 import UIKit
+import DependencyResolver
+
+protocol ExperienceView: AnyObject {
+    func updateJobs(with jobs: [JobModel])
+}
 
 final class ExperienceViewController: UIViewController {
 
+    private var presenter: ExperiencePresenterProtocol
+
     @IBOutlet private weak var tableView: UITableView!
 
-    private let data: [(key: String, value: String)] = [
-        ("Plexus", "March 2023 - Now"),
-        ("Experis", "March 2021 - March 2023")
-    ]
+    init(presenter: ExperiencePresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: "ExperienceViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private var data: [JobModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupTableView()
+        presenter.viewDidLoad()
     }
 }
 
@@ -44,6 +62,13 @@ extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse", for: indexPath) as? ExpandableJobCell else { return ExpandableJobCell() }
+        cell.configureJob(data[indexPath.item])
         return cell
+    }
+}
+
+extension ExperienceViewController: ExperienceView {
+    func updateJobs(with jobs: [JobModel]) {
+        data = jobs
     }
 }

@@ -15,4 +15,9 @@ struct ResumeNavigation {
         presenter.view = vc
         Navigator.shared.pushVC(vc)
     }
+
+    func goToExperience() {
+        let vc = ExperienceBuilder().build()
+        Navigator.shared.pushVC(vc)
+    }
 }

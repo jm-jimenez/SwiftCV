@@ -29,8 +29,7 @@ final class ResumeViewController: UIViewController {
     }
 
     @IBAction private func didTapMyExperience(_ sender: UIButton) {
-        let vc = ExperienceViewController(nibName: "ExperienceViewController", bundle: nil)
-        navigationController?.pushViewController(vc, animated: true)
+        presenter.goToExperience()
     }
 
     @IBAction private func didTapMyStudies(_ sender: UIButton) {
