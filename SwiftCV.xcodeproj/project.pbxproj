@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2C757A2CC3BEFB006A3D7D /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A2C75792CC3BEFB006A3D7D /* ChemaUtils */; };
 		1A3CB06B2CC38F2800B08AEA /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB06A2CC38F2800B08AEA /* ChemaUtils */; };
 		1A3CB0E32CC398DE00B08AEA /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB0E22CC398DE00B08AEA /* ChemaUtils */; };
+		1A403C0C2CC4DF6B00F5236A /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A403C0B2CC4DF6B00F5236A /* ChemaUtils */; };
 		1AB828E02CC3BA150008F241 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AB828DF2CC3BA150008F241 /* ChemaUtils */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3CB06B2CC38F2800B08AEA /* ChemaUtils in Frameworks */,
-				1A2C757A2CC3BEFB006A3D7D /* ChemaUtils in Frameworks */,
+				1A403C0C2CC4DF6B00F5236A /* ChemaUtils in Frameworks */,
 				1A3CB0E32CC398DE00B08AEA /* ChemaUtils in Frameworks */,
 				1AB828E02CC3BA150008F241 /* ChemaUtils in Frameworks */,
 			);
@@ -92,7 +92,7 @@
 				1A3CB06A2CC38F2800B08AEA /* ChemaUtils */,
 				1A3CB0E22CC398DE00B08AEA /* ChemaUtils */,
 				1AB828DF2CC3BA150008F241 /* ChemaUtils */,
-				1A2C75792CC3BEFB006A3D7D /* ChemaUtils */,
+				1A403C0B2CC4DF6B00F5236A /* ChemaUtils */,
 			);
 			productName = SwiftCV;
 			productReference = 1ACAB8152CC2CFD000115F09 /* SwiftCV.app */;
@@ -123,7 +123,7 @@
 			mainGroup = 1ACAB80C2CC2CFCF00115F09;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1A2C75782CC3BEFB006A3D7D /* XCRemoteSwiftPackageReference "ChemaUtils" */,
+				1A403C0A2CC4DF6B00F5236A /* XCLocalSwiftPackageReference "../ChemaUtils" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1ACAB8162CC2CFD000115F09 /* Products */;
@@ -362,28 +362,23 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		1A2C75782CC3BEFB006A3D7D /* XCRemoteSwiftPackageReference "ChemaUtils" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jm-jimenez/ChemaUtils";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.0.1;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		1A403C0A2CC4DF6B00F5236A /* XCLocalSwiftPackageReference "../ChemaUtils" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ChemaUtils;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1A2C75792CC3BEFB006A3D7D /* ChemaUtils */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1A2C75782CC3BEFB006A3D7D /* XCRemoteSwiftPackageReference "ChemaUtils" */;
-			productName = ChemaUtils;
-		};
 		1A3CB06A2CC38F2800B08AEA /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ChemaUtils;
 		};
 		1A3CB0E22CC398DE00B08AEA /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1A403C0B2CC4DF6B00F5236A /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ChemaUtils;
 		};

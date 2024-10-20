@@ -32,14 +32,8 @@ private extension ExperienceViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-    }
-
-    func configureCell(cell: UITableViewCell, indexPath: IndexPath) -> UITableViewCell {
-        var conf = cell.defaultContentConfiguration()
-        conf.text = data[indexPath.item].key
-        conf.secondaryText = data[indexPath.item].value
-        cell.contentConfiguration = conf
-        return cell
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.register(UINib(nibName: "ExpandableJobCell", bundle: nil), forCellReuseIdentifier: "cellReuse")
     }
 }
 
@@ -49,10 +43,7 @@ extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse") else {
-            let cell = UITableViewCell(style: .value2, reuseIdentifier: "cellReuse")
-            return configureCell(cell: cell, indexPath: indexPath)
-        }
-        return configureCell(cell: cell, indexPath: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse", for: indexPath) as? ExpandableJobCell else { return ExpandableJobCell() }
+        return cell
     }
 }
