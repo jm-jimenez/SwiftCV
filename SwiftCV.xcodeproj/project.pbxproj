@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A3CB06B2CC38F2800B08AEA /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB06A2CC38F2800B08AEA /* ChemaUtils */; };
-		1A3CB0E32CC398DE00B08AEA /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB0E22CC398DE00B08AEA /* ChemaUtils */; };
-		1A403C0C2CC4DF6B00F5236A /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A403C0B2CC4DF6B00F5236A /* ChemaUtils */; };
-		1AB828E02CC3BA150008F241 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AB828DF2CC3BA150008F241 /* ChemaUtils */; };
+		1AAE28502CC561BD005620F2 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A403C0B2CC4DF6B00F5236A /* ChemaUtils */; };
+		1AF65A882CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB06A2CC38F2800B08AEA /* ChemaUtils */; };
+		1AF65A892CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB0E22CC398DE00B08AEA /* ChemaUtils */; };
+		1AF65A8A2CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AB828DF2CC3BA150008F241 /* ChemaUtils */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1AAF77A12CC55F6D00684251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ACAB80D2CC2CFCF00115F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ACAB8142CC2CFD000115F09;
+			remoteInfo = SwiftCV;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1AAF779D2CC55F6D00684251 /* SwiftCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACAB8152CC2CFD000115F09 /* SwiftCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -28,6 +39,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		1AAF779E2CC55F6D00684251 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		1ACAB8172CC2CFD000115F09 /* SwiftCV */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -39,24 +55,40 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1AAF779A2CC55F6D00684251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ACAB8122CC2CFD000115F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3CB06B2CC38F2800B08AEA /* ChemaUtils in Frameworks */,
-				1A403C0C2CC4DF6B00F5236A /* ChemaUtils in Frameworks */,
-				1A3CB0E32CC398DE00B08AEA /* ChemaUtils in Frameworks */,
-				1AB828E02CC3BA150008F241 /* ChemaUtils in Frameworks */,
+				1AF65A8A2CC56D2D004E491B /* ChemaUtils in Frameworks */,
+				1AF65A892CC56D2D004E491B /* ChemaUtils in Frameworks */,
+				1AF65A882CC56D2D004E491B /* ChemaUtils in Frameworks */,
+				1AAE28502CC561BD005620F2 /* ChemaUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A72E2222CC561A6000A2C4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1ACAB80C2CC2CFCF00115F09 = {
 			isa = PBXGroup;
 			children = (
 				1ACAB8172CC2CFD000115F09 /* SwiftCV */,
+				1AAF779E2CC55F6D00684251 /* Tests */,
+				1A72E2222CC561A6000A2C4A /* Frameworks */,
 				1ACAB8162CC2CFD000115F09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1ACAB8152CC2CFD000115F09 /* SwiftCV.app */,
+				1AAF779D2CC55F6D00684251 /* SwiftCVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +105,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1AAF779C2CC55F6D00684251 /* SwiftCVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAF77A32CC55F6D00684251 /* Build configuration list for PBXNativeTarget "SwiftCVTests" */;
+			buildPhases = (
+				1AAF77992CC55F6D00684251 /* Sources */,
+				1AAF779A2CC55F6D00684251 /* Frameworks */,
+				1AAF779B2CC55F6D00684251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAF77A22CC55F6D00684251 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1AAF779E2CC55F6D00684251 /* Tests */,
+			);
+			name = SwiftCVTests;
+			packageProductDependencies = (
+			);
+			productName = SwiftCVTests;
+			productReference = 1AAF779D2CC55F6D00684251 /* SwiftCVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1ACAB8142CC2CFD000115F09 /* SwiftCV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ACAB8282CC2CFD300115F09 /* Build configuration list for PBXNativeTarget "SwiftCV" */;
@@ -108,6 +164,11 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					1AAF779C2CC55F6D00684251 = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+						TestTargetID = 1ACAB8142CC2CFD000115F09;
+					};
 					1ACAB8142CC2CFD000115F09 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -131,11 +192,19 @@
 			projectRoot = "";
 			targets = (
 				1ACAB8142CC2CFD000115F09 /* SwiftCV */,
+				1AAF779C2CC55F6D00684251 /* SwiftCVTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1AAF779B2CC55F6D00684251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ACAB8132CC2CFD000115F09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +215,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1AAF77992CC55F6D00684251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1ACAB8112CC2CFD000115F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,7 +231,64 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1AAF77A22CC55F6D00684251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ACAB8142CC2CFD000115F09 /* SwiftCV */;
+			targetProxy = 1AAF77A12CC55F6D00684251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1AAF77A42CC55F6D00684251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85YP73WK35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftCV";
+			};
+			name = Debug;
+		};
+		1AAF77A52CC55F6D00684251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85YP73WK35;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftCV";
+			};
+			name = Release;
+		};
 		1ACAB8292CC2CFD300115F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +475,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AAF77A32CC55F6D00684251 /* Build configuration list for PBXNativeTarget "SwiftCVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAF77A42CC55F6D00684251 /* Debug */,
+				1AAF77A52CC55F6D00684251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1ACAB8102CC2CFD000115F09 /* Build configuration list for PBXProject "SwiftCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

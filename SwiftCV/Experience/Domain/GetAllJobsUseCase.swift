@@ -8,7 +8,7 @@
 import DependencyResolver
 import Utils
 
-struct GetAllJobsUseCase: UseCase {
+final class GetAllJobsUseCase: UseCase {
 
     @Injected private var provider: JobsProvider
 

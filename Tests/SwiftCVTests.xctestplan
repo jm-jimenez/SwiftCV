@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "AA2148CE-7747-488D-8540-CC4B52312246",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:SwiftCV.xcodeproj",
+        "identifier" : "1AAF779C2CC55F6D00684251",
+        "name" : "SwiftCVTests"
+      }
+    }
+  ],
+  "version" : 1
+}
