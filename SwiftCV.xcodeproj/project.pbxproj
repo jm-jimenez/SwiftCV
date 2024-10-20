@@ -185,8 +185,8 @@
 			mainGroup = 1ACAB80C2CC2CFCF00115F09;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1A403C0A2CC4DF6B00F5236A /* XCLocalSwiftPackageReference "../ChemaUtils" */,
 				1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				1AB1567D2CC57F0E004BF111 /* XCRemoteSwiftPackageReference "ChemaUtils" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1ACAB8162CC2CFD000115F09 /* Products */;
@@ -510,13 +510,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		1A403C0A2CC4DF6B00F5236A /* XCLocalSwiftPackageReference "../ChemaUtils" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ChemaUtils;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -524,6 +517,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.57.0;
+			};
+		};
+		1AB1567D2CC57F0E004BF111 /* XCRemoteSwiftPackageReference "ChemaUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jm-jimenez/ChemaUtils";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
