@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v4
     - working-directory: ./SwiftCV/SwiftCV
     - name: Build
-        run: xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
+      run: xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
 
