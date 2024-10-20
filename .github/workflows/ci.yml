@@ -7,12 +7,6 @@ on:
   push:
     branches:
       - "**"
-      - "!experiment/**"
-
-defaults:
-  run:
-    shell: zsh --login --errexit --pipefail {0}
-
 jobs:
   build-and-test:
 
@@ -20,9 +14,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - working-directory: ./SwiftCV/SwiftCV
     - name: Build
-      run: pwd
-    - name: Run tests
-      run: >
-        xcodebuild -scheme MyApp -sdk iphonesimulator -destination name=iphone-${{ runner.name }}
-        test | xcbeautify
+        run: xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
+
