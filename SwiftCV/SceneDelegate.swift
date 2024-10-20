@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    // swiftlint:disable:next line_length
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
@@ -24,10 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         registerDependency(ResumePresenterProtocol.self) {
             ResumePresenter()
         }
-        let vc = ResumeViewController(nibName: "ResumeViewController", bundle: nil)
-        navigationController.viewControllers = [vc]
+        let viewController = ResumeViewController(nibName: "ResumeViewController", bundle: nil)
+        navigationController.viewControllers = [viewController]
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }
-

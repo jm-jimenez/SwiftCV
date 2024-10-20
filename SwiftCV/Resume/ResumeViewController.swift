@@ -17,13 +17,12 @@ final class ResumeViewController: UIViewController {
     @IBOutlet private weak var subtitle: UILabel!
 
     @Injected private var presenter: ResumePresenterProtocol
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
-    
+
     @IBAction private func didTapPersonalData(_ sender: UIButton) {
         presenter.goToPersonalData()
     }

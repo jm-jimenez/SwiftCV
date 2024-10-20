@@ -9,7 +9,7 @@ import UIKit
 import DependencyResolver
 
 protocol PersonalDataView: AnyObject {
-    
+
 }
 
 final class PersonalDataViewController: UIViewController {
@@ -21,11 +21,11 @@ final class PersonalDataViewController: UIViewController {
     init() {
         super.init(nibName: "PersonalDataViewController", bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
+
     private let data: [(key: String, value: String)] = [
         ("Name", "José María"),
         ("Surname", "Jiménez Pérez"),
@@ -68,7 +68,7 @@ extension PersonalDataViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse") else {
             let cell = UITableViewCell(style: .value2, reuseIdentifier: "cellReuse")

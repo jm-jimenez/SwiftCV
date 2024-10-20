@@ -10,14 +10,14 @@ import Navigation
 struct ResumeNavigation {
     func goToPersonalData() {
         PersonalDataBuilder().build()
-        let vc: PersonalDataViewController = DefaultDependencyResolver.shared.resolve()
+        let viewController: PersonalDataViewController = DefaultDependencyResolver.shared.resolve()
         var presenter: PersonalDataPresenterProtocol = DefaultDependencyResolver.shared.resolve()
-        presenter.view = vc
-        Navigator.shared.pushVC(vc)
+        presenter.view = viewController
+        Navigator.shared.pushVC(viewController)
     }
 
     func goToExperience() {
-        let vc = ExperienceBuilder().build()
-        Navigator.shared.pushVC(vc)
+        let viewController = ExperienceBuilder().build()
+        Navigator.shared.pushVC(viewController)
     }
 }

@@ -24,7 +24,11 @@ final class ExpandableJobCell: UITableViewCell {
                 UIView.animate(withDuration: 0.2) {
                     self.containerView.isHidden = !self.isExpanded
                     self.descriptionContainer.isHidden = self.isExpanded
-                    self.toggleButton.imageView?.transform = self.isExpanded ? CGAffineTransform(rotationAngle: .pi) : .identity
+                    if self.isExpanded {
+                        self.toggleButton.imageView?.transform = CGAffineTransform(rotationAngle: .pi)
+                    } else {
+                        self.toggleButton.imageView?.transform = .identity
+                    }
                     self.contentView.layoutIfNeeded()
                 }
             }

@@ -22,11 +22,11 @@ final class ExperienceViewController: UIViewController {
         self.presenter = presenter
         super.init(nibName: "ExperienceViewController", bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private var data: [JobModel] = [] {
         didSet {
             tableView.reloadData()
@@ -61,7 +61,10 @@ extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse", for: indexPath) as? ExpandableJobCell else { return ExpandableJobCell() }
+        // swiftlint:disable:next line_length
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse", for: indexPath) as? ExpandableJobCell else {
+            return ExpandableJobCell()
+        }
         cell.configureJob(data[indexPath.item])
         return cell
     }

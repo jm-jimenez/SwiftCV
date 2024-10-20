@@ -139,6 +139,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1AB1567C2CC570B9004BF111 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1ACAB8172CC2CFD000115F09 /* SwiftCV */,
@@ -185,6 +186,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				1A403C0A2CC4DF6B00F5236A /* XCLocalSwiftPackageReference "../ChemaUtils" */,
+				1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1ACAB8162CC2CFD000115F09 /* Products */;
@@ -236,6 +238,10 @@
 			isa = PBXTargetDependency;
 			target = 1ACAB8142CC2CFD000115F09 /* SwiftCV */;
 			targetProxy = 1AAF77A12CC55F6D00684251 /* PBXContainerItemProxy */;
+		};
+		1AB1567C2CC570B9004BF111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1AB1567B2CC570B9004BF111 /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,6 +517,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		1A3CB06A2CC38F2800B08AEA /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -523,6 +540,11 @@
 		1A403C0B2CC4DF6B00F5236A /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ChemaUtils;
+		};
+		1AB1567B2CC570B9004BF111 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 		1AB828DF2CC3BA150008F241 /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;

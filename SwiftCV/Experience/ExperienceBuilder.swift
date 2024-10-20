@@ -19,10 +19,10 @@ struct ExperienceBuilder {
         }
 
         let presenter = ExperiencePresenter()
-        let vc = ExperienceViewController(presenter: presenter)
+        let viewController = ExperienceViewController(presenter: presenter)
 
-        presenter.view = vc
+        presenter.view = viewController
 
-        return vc
+        return viewController
     }
 }
