@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: echo pwd
+      run: pwd
     - name: Run tests
       run: >
         xcodebuild -scheme MyApp -sdk iphonesimulator -destination name=iphone-${{ runner.name }}
