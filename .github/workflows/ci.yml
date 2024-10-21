@@ -17,8 +17,8 @@ jobs:
       - name: Build
         run: |
           xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
-          |xcpretty
+          | xcpretty
       - name: Test
         run: |
-          xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11'
+          xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11' | xcpretty
 
