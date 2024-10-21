@@ -21,8 +21,8 @@ jobs:
 
   clear:
     name: Clear
-    runs-on: self-hosted
     needs: build
+    runs-on: self-hosted
     steps:
       - name: Clean up
         run: cd ../.. && rm -rf SwiftCV
