@@ -35,7 +35,7 @@ extension ExperiencePresenter: ExperiencePresenterProtocol {
                     self?.view?.updateJobs(with: jobs)
                 }
             } catch {
-                // TODO: error handling
+                
             }
         }
     }
