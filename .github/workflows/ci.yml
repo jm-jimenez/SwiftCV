@@ -29,6 +29,7 @@ jobs:
   clear:
     name: Clear
     needs: [build, swiftlint]
+    if: always()
     runs-on: self-hosted
     steps:
       - name: Clean up
