@@ -34,9 +34,7 @@ extension ExperiencePresenter: ExperiencePresenterProtocol {
                     guard let jobs else { return }
                     self?.view?.updateJobs(with: jobs)
                 }
-            } catch {
-                
-            }
+            } catch {}
         }
     }
 }
