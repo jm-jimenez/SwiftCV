@@ -9,8 +9,9 @@ on:
       - "**"
 jobs:
   defaults:
-    shell: zsh
-    
+    run:
+      shell: zsh
+
   tests:
 
     runs-on: self-hosted
