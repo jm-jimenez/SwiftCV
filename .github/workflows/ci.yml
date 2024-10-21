@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "**" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "release/**"]
 
 jobs:
   build:
@@ -20,4 +20,6 @@ jobs:
       - name: Test
         run: |
           xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11' | xcpretty
+      - name: Clean up
+        run cd ../.. && rm -rf SwiftCV
 
