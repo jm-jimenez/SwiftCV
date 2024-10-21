@@ -515,8 +515,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.57.0;
+				kind = exactVersion;
+				version = 0.57.0;
 			};
 		};
 		1AB1567D2CC57F0E004BF111 /* XCRemoteSwiftPackageReference "ChemaUtils" */ = {

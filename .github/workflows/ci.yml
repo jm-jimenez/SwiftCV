@@ -19,9 +19,16 @@ jobs:
         run: |
           xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11' | xcpretty
 
+  swiftlint:
+    name: Swiftlint
+    runs-on: self-hosted
+    steps:
+      - name: Linting
+        run: swiftlint --config .swiftlint
+
   clear:
     name: Clear
-    needs: build
+    needs: [build, swiftlint]
     runs-on: self-hosted
     steps:
       - name: Clean up
