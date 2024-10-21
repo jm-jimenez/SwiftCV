@@ -15,6 +15,7 @@ jobs:
     defaults:
       run:
         shell: zsh {0}
+        working-directory: SwiftCV/SwiftCV
 
     steps:
     - name: Checkout
