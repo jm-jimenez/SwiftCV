@@ -16,5 +16,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Compile
-      run: |
-        xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
+      run: xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
