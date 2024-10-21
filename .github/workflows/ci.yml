@@ -15,5 +15,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Set Default Scheme
-      run: echo hiii
+    - name: Compile
+      run: |
+        xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator'
