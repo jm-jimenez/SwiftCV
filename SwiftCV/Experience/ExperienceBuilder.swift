@@ -11,12 +11,8 @@ import UIKit
 struct ExperienceBuilder {
     func build() -> UIViewController {
 
-        registerDependency(GetAllJobsUseCase.self) {
-            GetAllJobsUseCase()
-        }
-        registerDependency(JobsProvider.self) {
-            LocalJsonJobsProvider()
-        }
+        registerDependency(GetAllJobsUseCase.self, GetAllJobsUseCase.self)
+        registerDependency(JobsProvider.self, LocalJsonJobsProvider.self)
 
         let presenter = ExperiencePresenter()
         let viewController = ExperienceViewController(presenter: presenter)
