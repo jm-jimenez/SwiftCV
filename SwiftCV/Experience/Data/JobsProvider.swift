@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import DependencyResolver
 
-protocol JobsProvider {
+protocol JobsProvider: InjectableCapable {
     func getAllJobs() async throws -> [JobModel]
 }
 
