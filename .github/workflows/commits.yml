@@ -9,7 +9,7 @@ on:
 
 jobs:
   use_share:
-    uses: ./.github/workflows/shared.yml
+    uses: jm-jimenez/CommitsRunner/.github/workflows/shared.yml@master
     with:
       branch: master
       title: ${{ github.event.pull_request.title }}
