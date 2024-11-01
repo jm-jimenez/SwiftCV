@@ -22,10 +22,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         registerDependency(ResumeNavigation.self) {
             ResumeNavigation()
         }
+        registerDependency(GetCurrentLanguageUseCase.self, GetCurrentLanguageUseCase.self)
+        let presenter = ResumePresenter()
         registerDependency(ResumePresenterProtocol.self) {
-            ResumePresenter()
+            presenter
         }
         let viewController = ResumeViewController(nibName: "ResumeViewController", bundle: nil)
+        presenter.view = viewController
         navigationController.viewControllers = [viewController]
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

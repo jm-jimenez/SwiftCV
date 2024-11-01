@@ -42,11 +42,16 @@ final class PersonalDataViewController: UIViewController {
         setupNavigationBar()
         setupTableView()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 private extension PersonalDataViewController {
     func setupNavigationBar() {
-        title = "My personal data"
+        title = String(localized: "My personal data")
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 

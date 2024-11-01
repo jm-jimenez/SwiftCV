@@ -16,7 +16,3 @@ struct JobModel: Decodable {
         let assigments: [String]
     }
 }
-
-struct GetAllJobsResponse: Decodable {
-    let jobs: [JobModel]
-}

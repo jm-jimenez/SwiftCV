@@ -1,5 +1,5 @@
 {
-    "jobs":
+    "en":
     [
         {
             "company": "Plexus",
@@ -57,19 +57,23 @@
                     ]
                 }
             ]
-        },
+        }
+    ],
+    "es":
+    [
         {
             "company": "Plexus",
-            "date": "March 2023 - Now",
-            "description": "While the continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
+            "date": "Marzo 2023 - Actualidad",
+            "description": "While continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
             "projects": [
                 {
                     "name": "OpenBank USA",
                     "assigments": [
-                        "Payments vertical",
-                        "XCode 15.4 - 16 development",
+                        "Vertical de pagos",
+                        "Desarrollo con XCode 15.4 - 16",
+                        "Async / Await",
                         "MVP",
-                        "Modules embebed as binary frameworks"
+                        "Módulos embebidos como frameworks binarios"
                     ]
                 },
                 {
@@ -81,45 +85,36 @@
             ]
         },
         {
-            "company": "Plexus",
-            "date": "March 2023 - Now",
-            "description": "While the continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
+            "company": "Experis",
+            "date": "Marzo 2021 - Marzo 2023",
+            "description": "During this stage dfgdfgdfgdfg",
             "projects": [
-                {
-                    "name": "OpenBank USA",
-                    "assigments": [
-                        "Payments vertical",
-                        "XCode 15.4 - 16 development",
-                        "MVP",
-                        "Modules embebed as binary frameworks"
-                    ]
-                },
                 {
                     "name": "Santander One-App",
                     "assigments": [
-                        "We were moved from Experis to Plexus but we keep with the ongoing tasks in Experis."
+                        "Development of core modules used by different countries in its local apps",
+                        "MVP - MVVM"
                     ]
                 }
             ]
         },
         {
-            "company": "Sepe",
-            "date": "June 2007 - Now",
-            "description": "While the continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
+            "company": "Appogeo Digital",
+            "date": "Mayo 2019 - Marzo 2021",
+            "description": "In Appogeo I was the only iOS developer. This means I had to face challenges for me yet unkown such as provisioning profiles, certificates, and all the requeriments needed to upload to TestFlight / AppStore",
             "projects": [
                 {
-                    "name": "OpenBank USA",
+                    "name": "Clever Care",
                     "assigments": [
-                        "Payments vertical",
-                        "XCode 15.4 - 16 development",
-                        "MVP",
-                        "Modules embebed as binary frameworks"
+                        "Development of core modules used by different countries in its local apps",
+                        "MVP - MVVM"
                     ]
                 },
                 {
-                    "name": "Santander One-App",
+                    "name": "Clever Restaurant",
                     "assigments": [
-                        "We were moved from Experis to Plexus but we keep with the ongoing tasks in Experis."
+                        "Development of core modules used by different countries in its local apps",
+                        "MVP - MVVM"
                     ]
                 }
             ]

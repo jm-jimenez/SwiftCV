@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,8 +11,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResumeViewController" customModule="SwiftCV" customModuleProvider="target">
             <connections>
                 <outlet property="fullName" destination="BjR-GI-zvb" id="7mU-ZL-okp"/>
+                <outlet property="imageView" destination="D2l-CT-Z6g" id="2wZ-7U-DDT"/>
+                <outlet property="jobExperienceBtn" destination="U8r-kc-BhM" id="EQp-Oh-tbq"/>
+                <outlet property="languageButton" destination="0M4-NV-HCI" id="mEL-ka-etS"/>
+                <outlet property="personalDataBtn" destination="j2o-5g-m9t" id="trN-Ut-d66"/>
                 <outlet property="profileContainer" destination="nAR-Va-2pF" id="2cL-ug-TUn"/>
                 <outlet property="profileImage" destination="6Ih-tP-31b" id="WRZ-Rv-7lF"/>
+                <outlet property="studiesBtn" destination="siE-Z5-bhg" id="LmW-fT-d1o"/>
                 <outlet property="subtitle" destination="A7Q-zM-SE9" id="q5d-bY-QWC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +28,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAR-Va-2pF">
-                    <rect key="frame" x="131.66666666666666" y="84" width="129.99999999999997" height="130"/>
+                    <rect key="frame" x="131.66666666666666" y="94" width="129.99999999999997" height="130"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Ih-tP-31b">
                             <rect key="frame" x="1" y="1" width="128" height="128"/>
@@ -42,31 +47,31 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="José Mª Jiménez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjR-GI-zvb">
-                    <rect key="frame" x="16" y="233" width="361" height="40.666666666666686"/>
+                    <rect key="frame" x="16" y="242.99999999999997" width="361" height="40.666666666666657"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7Q-zM-SE9">
-                    <rect key="frame" x="16" y="281.66666666666669" width="361" height="18"/>
+                    <rect key="frame" x="16" y="291.66666666666669" width="361" height="18"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agH-nU-3dB">
-                    <rect key="frame" x="16" y="335" width="77" height="21"/>
+                    <rect key="frame" x="16" y="345" width="77" height="21"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-xF-NFE">
-                    <rect key="frame" x="16" y="364" width="361" height="152.33333333333337"/>
-                    <mutableString key="text">Hi, I'm Chema and I have been an iOS developer for the last 8 years. 10 years ago I was working as auditor but that not was my thing.  So I studied what I love, I gave all my effort and passion and I have been growing as a professional doind what I really like.</mutableString>
+                    <rect key="frame" x="16" y="374" width="361" height="152.33333333333337"/>
+                    <string key="text">Hi, I'm Chema and I have been an iOS developer for the last 8 years. 10 years ago I was working as auditor but that not was my thing.  So I studied what I love, I gave all my effort and passion and I have been growing as a professional doind what I really like.</string>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-5g-m9t">
-                    <rect key="frame" x="16" y="557" width="131.33333333333334" height="20.333333333333371"/>
+                    <rect key="frame" x="16" y="567" width="131.33333333333334" height="20.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="My personal data">
                         <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
@@ -76,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8r-kc-BhM">
-                    <rect key="frame" x="16" y="592.33333333333337" width="139" height="20.333333333333371"/>
+                    <rect key="frame" x="16" y="602.33333333333337" width="139" height="20.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="My job experience">
                         <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
@@ -86,7 +91,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siE-Z5-bhg">
-                    <rect key="frame" x="16" y="627.66666666666663" width="193" height="20.333333333333371"/>
+                    <rect key="frame" x="16" y="637.66666666666663" width="193" height="20.333333333333371"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="My studies and formation">
                         <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
@@ -95,24 +100,45 @@
                         <action selector="didTapMyStudies:" destination="-1" eventType="touchUpInside" id="4bJ-i1-yvA"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2l-CT-Z6g">
+                    <rect key="frame" x="338" y="75" width="30" height="30"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0M4-NV-HCI">
+                    <rect key="frame" x="338" y="75" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4TL-PK-0ZF"/>
+                        <constraint firstAttribute="width" constant="30" id="NRo-jU-7K5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="didTapLanguage:" destination="-1" eventType="touchUpInside" id="kli-9K-Hw4"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="D2l-CT-Z6g" firstAttribute="top" secondItem="0M4-NV-HCI" secondAttribute="top" id="49Z-pu-ymx"/>
                 <constraint firstItem="BUp-xF-NFE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7hh-0b-Z5V"/>
                 <constraint firstItem="j2o-5g-m9t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8qV-Kf-eeF"/>
                 <constraint firstItem="BjR-GI-zvb" firstAttribute="top" secondItem="6Ih-tP-31b" secondAttribute="bottom" constant="20" id="99t-7f-hQR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0M4-NV-HCI" secondAttribute="trailing" constant="25" id="Bzr-Gv-ydx"/>
                 <constraint firstItem="siE-Z5-bhg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="D9R-UT-7gx"/>
+                <constraint firstItem="D2l-CT-Z6g" firstAttribute="trailing" secondItem="0M4-NV-HCI" secondAttribute="trailing" id="Jhz-qt-JrD"/>
                 <constraint firstItem="agH-nU-3dB" firstAttribute="top" secondItem="A7Q-zM-SE9" secondAttribute="bottom" constant="35.333333333333314" id="K5W-pP-9D9"/>
                 <constraint firstItem="U8r-kc-BhM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LaZ-7a-5T2"/>
                 <constraint firstItem="A7Q-zM-SE9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="NPc-ZY-nkU"/>
+                <constraint firstItem="D2l-CT-Z6g" firstAttribute="bottom" secondItem="0M4-NV-HCI" secondAttribute="bottom" id="Oe3-2K-wqC"/>
                 <constraint firstItem="j2o-5g-m9t" firstAttribute="top" secondItem="BUp-xF-NFE" secondAttribute="bottom" constant="40.666666666666629" id="UXX-vm-Atf"/>
+                <constraint firstItem="D2l-CT-Z6g" firstAttribute="leading" secondItem="0M4-NV-HCI" secondAttribute="leading" id="Wmt-iX-us7"/>
                 <constraint firstItem="siE-Z5-bhg" firstAttribute="top" secondItem="U8r-kc-BhM" secondAttribute="bottom" constant="15" id="Z0f-s9-uuT"/>
                 <constraint firstItem="agH-nU-3dB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ahD-RL-utm"/>
                 <constraint firstItem="BjR-GI-zvb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aqN-g0-d5w"/>
                 <constraint firstItem="nAR-Va-2pF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bge-Dm-puN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BjR-GI-zvb" secondAttribute="trailing" constant="16" id="bsG-EW-I0z"/>
-                <constraint firstItem="nAR-Va-2pF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="dwg-nS-EJq"/>
+                <constraint firstItem="0M4-NV-HCI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="c9Z-Yo-oSL"/>
+                <constraint firstItem="nAR-Va-2pF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="dwg-nS-EJq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A7Q-zM-SE9" secondAttribute="trailing" constant="16" id="eYe-qN-o7d"/>
                 <constraint firstAttribute="trailing" secondItem="BUp-xF-NFE" secondAttribute="trailing" constant="16" id="fyJ-WX-8c0"/>
                 <constraint firstItem="BUp-xF-NFE" firstAttribute="top" secondItem="agH-nU-3dB" secondAttribute="bottom" constant="8" symbolic="YES" id="tnT-le-rsD"/>
@@ -124,7 +150,7 @@
     </objects>
     <resources>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
