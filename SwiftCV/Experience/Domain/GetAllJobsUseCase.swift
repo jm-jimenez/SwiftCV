@@ -11,8 +11,10 @@ import Utils
 final class GetAllJobsUseCase: UseCase {
 
     @Injected private var provider: JobsProvider
+    @Injected private var appSettings: AppSettingsProtocol
 
     func execute() async throws -> [JobModel] {
-        return try await provider.getAllJobs()
+        let result = try await provider.getAllJobs()
+        return result[appSettings.currentLanguage] ?? []
     }
 }

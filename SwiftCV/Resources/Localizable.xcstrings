@@ -1,0 +1,46 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Coming soon!" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Próximamente!"
+          }
+        }
+      }
+    },
+    "My job experience" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi experiencia"
+          }
+        }
+      }
+    },
+    "My personal data" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mis datos personales"
+          }
+        }
+      }
+    },
+    "My studies and formation" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi formación y estudios"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

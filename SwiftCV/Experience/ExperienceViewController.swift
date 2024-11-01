@@ -7,6 +7,7 @@
 
 import UIKit
 import DependencyResolver
+import Language
 
 protocol ExperienceView: AnyObject {
     func updateJobs(with jobs: [JobModel])
@@ -39,11 +40,16 @@ final class ExperienceViewController: UIViewController {
         setupTableView()
         presenter.viewDidLoad()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 private extension ExperienceViewController {
     func setupNavigationBar() {
-        title = "My job experience"
+        title = String(localized: "My job experience")
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
