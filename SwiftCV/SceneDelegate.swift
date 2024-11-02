@@ -19,16 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         let navigationController = UINavigationController()
         Navigator.shared.navigationController = navigationController
-        registerDependency(NavigationCapable.self, ResumeNavigator.self)
-        registerDependency(GetCurrentLanguageUseCase.self, GetCurrentLanguageUseCase.self)
-        let presenter = ResumePresenter()
-        registerDependency(ResumePresenterProtocol.self) {
-            presenter
+        do {
+            let entryPoint: EntryPointProtocol = try DefaultDependencyResolver.shared.resolve()
+            navigationController.viewControllers = [entryPoint.getEntryPointViewController()]
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
+        } catch {
+            fatalError("Entry point not registered")
         }
-        let viewController = ResumeViewController(nibName: "ResumeViewController", bundle: nil)
-        presenter.view = viewController
-        navigationController.viewControllers = [viewController]
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
     }
 }

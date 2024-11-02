@@ -16,14 +16,15 @@ final class PersonalDataViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
 
-    @Injected private var presenter: PersonalDataPresenterProtocol
+    private var presenter: PersonalDataPresenterProtocol
 
-    init() {
+    init(presenter: PersonalDataPresenterProtocol) {
+        self.presenter = presenter
         super.init(nibName: "PersonalDataViewController", bundle: nil)
     }
 
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
 
     private let data: [(key: String, value: String)] = [
