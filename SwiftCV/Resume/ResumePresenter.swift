@@ -6,6 +6,7 @@
 //
 
 import DependencyResolver
+import Navigation
 
 protocol ResumePresenterProtocol {
     func viewDidLoad()
@@ -15,7 +16,6 @@ protocol ResumePresenterProtocol {
 
 final class ResumePresenter: InjectableCapable {
     weak var view: ResumeView?
-    @Injected private var navigation: ResumeNavigation
     @Injected private var getCurrentLanguageUseCase: GetCurrentLanguageUseCase
 }
 
@@ -29,10 +29,10 @@ extension ResumePresenter: ResumePresenterProtocol {
     }
 
     func goToPersonalData() {
-        navigation.goToPersonalData()
+        Navigator.shared.navigateTo(ResumeNavigator.Destinations.personalData)
     }
 
     func goToExperience() {
-        navigation.goToExperience()
+        Navigator.shared.navigateTo(ResumeNavigator.Destinations.experience)
     }
 }

@@ -14,10 +14,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Build
         run: |
-          xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator' | xcpretty
+          set -o pipefail
+          xcodebuild build -scheme SwiftCV -destination 'generic/platform=iOS Simulator' -derivedDataPath ./temp | xcpretty
       - name: Test
         run: |
-          xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11' | xcpretty
+          set -o pipefail
+          xcodebuild test -scheme SwiftCVTests -destination 'platform=iOS Simulator,OS=17.0,name=iPhone 11' -derivedDataPath ./temp | xcpretty
 
   swiftlint:
     name: Swiftlint

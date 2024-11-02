@@ -19,9 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         let navigationController = UINavigationController()
         Navigator.shared.navigationController = navigationController
-        registerDependency(ResumeNavigation.self) {
-            ResumeNavigation()
-        }
+        registerDependency(NavigationCapable.self, ResumeNavigator.self)
         registerDependency(GetCurrentLanguageUseCase.self, GetCurrentLanguageUseCase.self)
         let presenter = ResumePresenter()
         registerDependency(ResumePresenterProtocol.self) {

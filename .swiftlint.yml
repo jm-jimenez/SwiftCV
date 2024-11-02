@@ -1,1 +1,4 @@
 strict: true
+
+excluded:
+  - temp
