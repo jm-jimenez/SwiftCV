@@ -15,7 +15,7 @@ jobs:
       - name: Build
         run: |
           set -o pipefail
-          xcodebuild -scheme SwiftCV -destination 'generic/platform=iOS Simulator' -derivedDataPath ./temp | xcpretty
+          xcodebuild build -scheme SwiftCV -destination 'generic/platform=iOS Simulator' -derivedDataPath ./temp | xcpretty
       - name: Test
         run: |
           set -o pipefail
