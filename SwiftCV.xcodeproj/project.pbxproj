@@ -190,7 +190,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				1A2BFC5E2CC56FA60033B837 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
-				1AFFCD1F2CD4D3BC00B6DAFE /* XCRemoteSwiftPackageReference "ChemaUtils" */,
+				1AC3AD1A2CD62451004C6782 /* XCRemoteSwiftPackageReference "ChemaUtils" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1ACAB8162CC2CFD000115F09 /* Products */;
@@ -259,7 +259,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85YP73WK35;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,7 +284,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85YP73WK35;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,7 +529,7 @@
 				version = 0.57.0;
 			};
 		};
-		1AFFCD1F2CD4D3BC00B6DAFE /* XCRemoteSwiftPackageReference "ChemaUtils" */ = {
+		1AC3AD1A2CD62451004C6782 /* XCRemoteSwiftPackageReference "ChemaUtils" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jm-jimenez/ChemaUtils";
 			requirement = {

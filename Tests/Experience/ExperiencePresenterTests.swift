@@ -16,6 +16,7 @@ final class ExperiencePresenterTests: XCTestCase {
     private var mockProvider = JobsProviderMock()
 
     override func setUp() {
+        DefaultDependencyResolver.shared.clear()
         super.setUp()
         setupDependencies()
     }
@@ -23,7 +24,6 @@ final class ExperiencePresenterTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
         sut = nil
-        DefaultDependencyResolver.shared.clear()
     }
 
     func testViewDidLoad_shouldRetrieveJobs() {
@@ -44,6 +44,11 @@ final class ExperiencePresenterTests: XCTestCase {
 private extension ExperiencePresenterTests {
     func setupDependencies() {
         mockProvider = JobsProviderMock()
+        registerDependency(AppSettingsProtocol.self) {
+            let appSettings = AppSettings()
+            appSettings.currentLanguage = .english
+            return appSettings
+        }
         registerDependency(JobsProvider.self) {
             self.mockProvider
         }

@@ -7,6 +7,7 @@
 
 @testable import SwiftCV
 import Foundation
+import Language
 
 final class ExperienceViewMock: ExperienceView {
     var completion: (([JobModel]) -> Void)?
@@ -17,9 +18,9 @@ final class ExperienceViewMock: ExperienceView {
 }
 
 final class JobsProviderMock: JobsProvider {
-    var result: Result<[JobModel], Error>?
+    var result: Result<[LanguageType: [JobModel]], Error>?
 
-    func getAllJobs() async throws -> [JobModel] {
+    func getAllJobs() async throws -> [LanguageType: [JobModel]] {
         guard let result, case .success(let success) = result else {
             throw CocoaError(.fileReadCorruptFile)
         }
@@ -28,8 +29,8 @@ final class JobsProviderMock: JobsProvider {
 }
 
 extension JobModel {
-    static let testSuite = [JobModel(company: "test",
+    static let testSuite = [LanguageType.english: [JobModel(company: "test",
                                      date: "test",
                                      description: "test",
-                                     projects: [])]
+                                     projects: [])]]
 }
