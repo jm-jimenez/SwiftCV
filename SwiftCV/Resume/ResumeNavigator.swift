@@ -28,15 +28,11 @@ extension ResumeNavigator {
     }
 
     func buildPersonalDataDestination() -> UIViewController {
-        PersonalDataBuilder().build()
-        do {
-            let viewController: PersonalDataViewController = try DefaultDependencyResolver.shared.resolve()
-            var presenter: PersonalDataPresenterProtocol = try DefaultDependencyResolver.shared.resolve()
-            presenter.view = viewController
-            return viewController
-        } catch {
-            fatalError()
-        }
+        PersonalDataDependencies().registerDependencies()
+        let presenter = PersonalDataPresenter()
+        let viewController = PersonalDataViewController(presenter: presenter)
+        presenter.view = viewController
+        return viewController
     }
 
     func buildExperienceDestination() -> UIViewController {

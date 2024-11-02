@@ -27,7 +27,16 @@ final class ResumeViewController: UIViewController {
     @IBOutlet private weak var jobExperienceBtn: UIButton!
     @IBOutlet private weak var studiesBtn: UIButton!
 
-    @Injected private var presenter: ResumePresenterProtocol
+    private var presenter: ResumePresenterProtocol
+
+    init(presenter: ResumePresenterProtocol) {
+        self.presenter = presenter
+        super.init(nibName: "ResumeViewController", bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
