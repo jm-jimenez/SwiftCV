@@ -31,7 +31,6 @@ final class PersonalDataViewController: UIViewController {
         ("Name", "José María"),
         ("Surname", "Jiménez Pérez"),
         ("Birth", "03-05-1988"),
-        ("DNI", "52002944J"),
         ("Address", "**** 5"),
         ("City", "28*** ***drid"),
         ("Email", "josemariajimenezperez@gmail.com"),

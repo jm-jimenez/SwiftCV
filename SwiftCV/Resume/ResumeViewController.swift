@@ -23,6 +23,8 @@ final class ResumeViewController: UIViewController {
     @IBOutlet private weak var profileImage: UIImageView!
     @IBOutlet private weak var fullName: UILabel!
     @IBOutlet private weak var subtitle: UILabel!
+    @IBOutlet private weak var aboutMeLbl: UILabel!
+    @IBOutlet private weak var aboutMeContentLbl: UILabel!
     @IBOutlet private weak var personalDataBtn: UIButton!
     @IBOutlet private weak var jobExperienceBtn: UIButton!
     @IBOutlet private weak var studiesBtn: UIButton!
@@ -79,6 +81,8 @@ extension ResumeViewController: ResumeView {
 private extension ResumeViewController {
     func setupViews() {
         setupProfileImage()
+        aboutMeLbl.text = String(localized: "About me")
+        aboutMeContentLbl.text = String(localized: "About me content")
         personalDataBtn.setTitle(String(localized: "My personal data"), for: .normal)
         jobExperienceBtn.setTitle(String(localized: "My job experience"), for: .normal)
         studiesBtn.setTitle(String(localized: "My studies and formation"), for: .normal)

@@ -4,21 +4,24 @@
         {
             "company": "Plexus",
             "date": "March 2023 - Now",
-            "description": "While continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
+            "description": "Santander changed its provider and as a consecuence, I kept working with my assigments for the OneApp under this new company. My adquired knowledge and my evolution inside the project allowed me to became iOS Team Lead of the squad",
             "projects": [
                 {
                     "name": "OpenBank USA",
                     "assigments": [
                         "Payments vertical",
                         "XCode 15.4 - 16 development",
+                        "Async / Await",
                         "MVP",
-                        "Modules embebed as binary frameworks"
+                        "Modules embedded as binary frameworks"
                     ]
                 },
                 {
                     "name": "Santander One-App",
                     "assigments": [
-                        "We were moved from Experis to Plexus but we keep with the ongoing tasks in Experis."
+                        "Continuation with previous core modularization tasks",
+                        "Definition of solutions and providing technical approach in the agile ceremonies",
+                        "Code review and supervision as Trusted Commiter"
                     ]
                 }
             ]
@@ -26,13 +29,18 @@
         {
             "company": "Experis",
             "date": "March 2021 - March 2023",
-            "description": "During this stage dfgdfgdfgdfg",
+            "description": "My whole period in Experis I was designed to Santander Retail app. Therefore this was the bigest project I have been in, and in the most developers I have met with.",
             "projects": [
                 {
                     "name": "Santander One-App",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "Development of Core modules shared between different verticals (countries)",
+                        "Integration of said modules in local country apps",
+                        "Dependency injection",
+                        "Modularization",
+                        "Open Combine",
+                        "MVP and MVVM architectures",
+                        "Agile - Scrum"
                     ]
                 }
             ]
@@ -40,20 +48,99 @@
         {
             "company": "Appogeo Digital",
             "date": "May 2019 - March 2021",
-            "description": "In Appogeo I was the only iOS developer. This means I had to face challenges for me yet unkown such as provisioning profiles, certificates, and all the requeriments needed to upload to TestFlight / AppStore",
+            "description": "In Appogeo I was the sole iOS developer, hence I learnt to create and manage AppIDs, development and release certificates, provisioning profiles, TestFlight and everything related to App Store Connect",
             "projects": [
                 {
                     "name": "Clever Care",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "Elder care and assist app",
+                        "Notification Service Extension",
+                        "Notification Content Extension"
                     ]
                 },
                 {
                     "name": "Clever Restaurant",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "Delivery notes management app for restaurant business companies",
+                        "OCR with Tesseract + AVFoundation + Vision",
+                        "Core Data"
+                    ]
+                },
+                {
+                    "name": "Both",
+                    "assigments": [
+                        "Planning, analysis, architecture definition and scope, functionallity specification",
+                        "XCode 12 and Swift 5 development",
+                        "Dependency management with Cocoapods",
+                        "IB + Autolayout"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Plexus",
+            "date": "June 2018 - May 2019",
+            "description": "During this stage I was assigned to the client Abanca, perfoming modularization tasks",
+            "projects": [
+                {
+                    "name": "Abanca",
+                    "assigments": [
+                        "XCode 10 and Swift 4.2 development",
+                        "MVVM-C architecture",
+                        "Modules as frameworks managed with Carthage",
+                        "User interface with Interface Builder + Autolayout",
+                        "Git control version"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Vass",
+            "date": "September 2017 - June 2018",
+            "description": "In this period I was part of a bigger team, with developers with much more experience and skill. I was working for the client Bankinter mainly",
+            "projects": [
+                {
+                    "name": "COINC",
+                    "assigments": [
+                        "API-Rest services integration",
+                        "Screens layout with AutoLayout",
+                        "Swift 3 development",
+                        "VIPER architecture",
+                        "Protocols oriented programming",
+                        "Dependencies managed with Cocoapods"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Alalza Soluciones Integrales",
+            "date": "March 2017 - September 2017",
+            "description": "In Alalza I was the only iOS developer. The code was written in Objective-C but all the new classes were introducing Swift 3. During this period I started learing Swift and manage certificates / deploy in iTunes Connect",
+            "projects": [
+                {
+                    "name": "AlertCops",
+                    "assigments": [
+                        "Periodic geolocation with CoreLocation",
+                        "Push notifications",
+                        "Management Apple certificates for pushes",
+                        "iTunes Connect release"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Let's Health",
+            "date": "April 2016 - March 2017",
+            "description": "My first approach as professional programmer was in Let's Health and there was where I performed my academic internship. There was where I started learning Objective-C and becoming familiar with Apple world. Although the \"hybrid\" apps where made with and html in a webview, this stage allowed me to start using XCode",
+            "projects": [
+                {
+                    "name": "Several apps for medical visitors salesman",
+                    "assigments": [
+                        "Native and hybrid iOS apps development",
+                        "Construction and implementation of custom API-rests with KeystoneJS",
+                        "Dynamic presentatios targeting sanitary professionals",
+                        "Objective - C",
+                        "Veeva"
                     ]
                 }
             ]
@@ -64,7 +151,7 @@
         {
             "company": "Plexus",
             "date": "Marzo 2023 - Actualidad",
-            "description": "While continuing the work on Santander One-App I became iOS reference for my squad. We developed several and diferrent petitions for local countries, but always with a core perspective. Then I changed to OpenBank project and I had to learn a massive project again.",
+            "description": "Se produjo un cambio de proveedor en el Santander, y a consecuencia de este movimiento continué con las labores de la OneApp bajo esta nueva empresa. El conocimiento y la trayectoria dentro del proyecto me permitieron ser iOS Team Lead del squad",
             "projects": [
                 {
                     "name": "OpenBank USA",
@@ -79,7 +166,9 @@
                 {
                     "name": "Santander One-App",
                     "assigments": [
-                        "We were moved from Experis to Plexus but we keep with the ongoing tasks in Experis."
+                        "Continuación con las tareas Core de modularización",
+                        "Definición de soluciones y planteamiento del enfoque técnico en las ceremonias agile",
+                        "Revisión de código y supervisión como Trusted Commiter"
                     ]
                 }
             ]
@@ -87,13 +176,18 @@
         {
             "company": "Experis",
             "date": "Marzo 2021 - Marzo 2023",
-            "description": "During this stage dfgdfgdfgdfg",
+            "description": "Durante toda mi etapa en Experis estuve dedicado a la app para particulares del Banco Santander. Es por tanto el proyecto más grande en el que he trabajado, y con el que más desarrolladores he coincidido.",
             "projects": [
                 {
                     "name": "Santander One-App",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "Desarrollo módulos Core compartidos entre distintas verticales (países)",
+                        "Integración de los módulos core en las aplicaciones locales de cada país",
+                        "Inyección de dependencias",
+                        "Modularización",
+                        "Open Combine",
+                        "Arquitecturas MVP y MVVM",
+                        "Agile - Scrum"
                     ]
                 }
             ]
@@ -101,20 +195,99 @@
         {
             "company": "Appogeo Digital",
             "date": "Mayo 2019 - Marzo 2021",
-            "description": "In Appogeo I was the only iOS developer. This means I had to face challenges for me yet unkown such as provisioning profiles, certificates, and all the requeriments needed to upload to TestFlight / AppStore",
+            "description": "En Appogeo era el único desarrollador iOS así que aprendí a crear y gestionar AppIDs, certificados de desarrollo y release, TestFlight y temas relacionados con App Store Connect",
             "projects": [
                 {
                     "name": "Clever Care",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "App para cuidado y asistencia de personas mayores",
+                        "Notification Service Extension",
+                        "Notification Content Extension"
                     ]
                 },
                 {
                     "name": "Clever Restaurant",
                     "assigments": [
-                        "Development of core modules used by different countries in its local apps",
-                        "MVP - MVVM"
+                        "App para gestión de albarares clientes sector restauración",
+                        "OCR con Tesseract + AVFoundation + Vision",
+                        "Core Data"
+                    ]
+                },
+                {
+                    "name": "Común a ambos",
+                    "assigments": [
+                        "Planificación, análisis, definifición de arquitectura y alcance, especificación de funcionalidades",
+                        "Desarrollo con XCode 12 y Swift 5",
+                        "Gestión de dependencias con Cocoapods",
+                        "IB + Autolayout"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Plexus",
+            "date": "Junio 2018 - Mayo 2019",
+            "description": "Durante esta etapa estuve destinado principalmente en el cliente Abanca, realizando tareas de modularización.",
+            "projects": [
+                {
+                    "name": "Abanca",
+                    "assigments": [
+                        "Desarrollo con XCode 10 y Swift 4.2",
+                        "Arquitectura MVVM-C",
+                        "Módulos como frameworks gestionados con Carthage",
+                        "Interfaz de usuario con Interface Builder + Autolayout",
+                        "Control de versiones con Git"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Vass",
+            "date": "Septiembre 2017 - Junio 2018",
+            "description": "En este periodo formé parte de un equipo más grande, con desarrolladores con mucha más experiencia. Principalmente estuve trabajando para el cliente Bankinter",
+            "projects": [
+                {
+                    "name": "COINC",
+                    "assigments": [
+                        "Integración servicios API-Rest",
+                        "Maquetación de pantallas con AutoLayout",
+                        "Desarrollo con Swift 3",
+                        "Arquitectura VIPER",
+                        "Programación orientada a protocolos",
+                        "Gestión de dependencias con Cocoapods"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Alalza Soluciones Integrales",
+            "date": "Marzo 2017 - Septiembre 2017",
+            "description": "En Alalza era el único desarrollador iOS. El código era en Objective-C pero para las nuevas clases se empezaba a introducir Swift 3. En periodo comencé a aprender Swift y a gestionar certificados / desplegar en iTunes Connect",
+            "projects": [
+                {
+                    "name": "AlertCops",
+                    "assigments": [
+                        "Geoposicionamiento periódico con CoreLocation",
+                        "Notificaciones push",
+                        "Gestión de certificados Apple para gestión pushs",
+                        "Publicación iTunes Connect"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Let's Health",
+            "date": "Abril 2016 - Marzo 2017",
+            "description": "Mi primer contacto profesional como programador fue en Let's Health y fue donde realicé las prácticas del módulo. Fue donde empecé a aprender Objective-C y a tener contacto con el mundo Apple. Aunque las aplicaciones \"híbridas\" consistían de un html en un navegador, me empecé a familiarizar con XCode",
+            "projects": [
+                {
+                    "name": "Diversas aplicaciones de visitadores médicos",
+                    "assigments": [
+                        "Desarrollo de aplicaciones nativas e híbridas para iOS.",
+                        "Creación y utilización de API rest propias con KeystoneJS",
+                        "Presentaciones dinámicas enfocadas marketing para profesionales sanitarios",
+                        "Objective - C",
+                        "Veeva"
                     ]
                 }
             ]

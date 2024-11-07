@@ -10,6 +10,7 @@ import Utils
 
 final class ExpandableJobCell: UITableViewCell {
 
+    @IBOutlet private weak var expandableContentStack: UIStackView!
     @IBOutlet private weak var companyLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var toggleButton: UIButton!
@@ -23,7 +24,6 @@ final class ExpandableJobCell: UITableViewCell {
             tableView.performBatchUpdates {
                 UIView.animate(withDuration: 0.2) {
                     self.containerView.isHidden = !self.isExpanded
-                    self.descriptionContainer.isHidden = self.isExpanded
                     if self.isExpanded {
                         self.toggleButton.imageView?.transform = CGAffineTransform(rotationAngle: .pi)
                     } else {
@@ -44,6 +44,7 @@ final class ExpandableJobCell: UITableViewCell {
         companyLabel.text = job.company
         dateLabel.text = job.date
         descriptionLabel.text = job.description
+        expandableContentStack.setCustomSpacing(7, after: descriptionContainer)
         createProjectViews(job)
     }
 
@@ -66,11 +67,13 @@ private extension ExpandableJobCell {
             stackView.addArrangedSubview(childStackView)
             let label = createProjectLabel(project)
             childStackView.addArrangedSubview(label)
+            childStackView.setCustomSpacing(7, after: label)
             let assigmentStackViewContainer = UIStackView()
             assigmentStackViewContainer.axis = .horizontal
             childStackView.addArrangedSubview(assigmentStackViewContainer)
             assigmentStackViewContainer.addHorizontalSpacer(width: 8)
             let assigmentsStackView = UIStackView()
+            assigmentsStackView.spacing = 4
             assigmentsStackView.axis = .vertical
             assigmentStackViewContainer.addArrangedSubview(assigmentsStackView)
             project.assigments.forEach {
