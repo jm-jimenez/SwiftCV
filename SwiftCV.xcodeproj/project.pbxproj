@@ -11,6 +11,11 @@
 		1AF65A882CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB06A2CC38F2800B08AEA /* ChemaUtils */; };
 		1AF65A892CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3CB0E22CC398DE00B08AEA /* ChemaUtils */; };
 		1AF65A8A2CC56D2D004E491B /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AB828DF2CC3BA150008F241 /* ChemaUtils */; };
+		1AFBB97F2CDD259900881360 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFBB97A2CDD259900881360 /* ChemaUtils */; };
+		1AFBB9802CDD259900881360 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFBB9792CDD259900881360 /* ChemaUtils */; };
+		1AFBB9812CDD259900881360 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFBB9782CDD259900881360 /* ChemaUtils */; };
+		1AFBB9822CDD259900881360 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFBB97C2CDD259900881360 /* ChemaUtils */; };
+		1AFBB9832CDD259900881360 /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFBB97B2CDD259900881360 /* ChemaUtils */; };
 		1AFFCA3E2CD36A5300B6DAFE /* ChemaUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 1AFFCA3D2CD36A5300B6DAFE /* ChemaUtils */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,8 @@
 /* Begin PBXFileReference section */
 		1AAF779D2CC55F6D00684251 /* SwiftCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACAB8152CC2CFD000115F09 /* SwiftCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFBB9882CDD259900881360 /* My CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My CV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFBB98A2CDD259900881360 /* Release-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Release-Info.plist"; path = "/Users/jmjimenez/Documents/Projects/SwiftCV/Release-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,13 @@
 				Info.plist,
 			);
 			target = 1ACAB8142CC2CFD000115F09 /* SwiftCV */;
+		};
+		1AFBB9892CDD259900881360 /* Exceptions for "SwiftCV" folder in "Release" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1AFBB9762CDD259900881360 /* Release */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -49,6 +63,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				1ACAB8272CC2CFD300115F09 /* Exceptions for "SwiftCV" folder in "SwiftCV" target */,
+				1AFBB9892CDD259900881360 /* Exceptions for "SwiftCV" folder in "Release" target */,
 			);
 			path = SwiftCV;
 			sourceTree = "<group>";
@@ -75,6 +90,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AFBB97E2CDD259900881360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFBB97F2CDD259900881360 /* ChemaUtils in Frameworks */,
+				1AFBB9802CDD259900881360 /* ChemaUtils in Frameworks */,
+				1AFBB9812CDD259900881360 /* ChemaUtils in Frameworks */,
+				1AFBB9822CDD259900881360 /* ChemaUtils in Frameworks */,
+				1AFBB9832CDD259900881360 /* ChemaUtils in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +118,7 @@
 				1ACAB8172CC2CFD000115F09 /* SwiftCV */,
 				1AAF779E2CC55F6D00684251 /* Tests */,
 				1A72E2222CC561A6000A2C4A /* Frameworks */,
+				1AFBB98A2CDD259900881360 /* Release-Info.plist */,
 				1ACAB8162CC2CFD000115F09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +128,7 @@
 			children = (
 				1ACAB8152CC2CFD000115F09 /* SwiftCV.app */,
 				1AAF779D2CC55F6D00684251 /* SwiftCVTests.xctest */,
+				1AFBB9882CDD259900881360 /* My CV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +187,34 @@
 			productReference = 1ACAB8152CC2CFD000115F09 /* SwiftCV.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1AFBB9762CDD259900881360 /* Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AFBB9852CDD259900881360 /* Build configuration list for PBXNativeTarget "Release" */;
+			buildPhases = (
+				1AFBB97D2CDD259900881360 /* Sources */,
+				1AFBB97E2CDD259900881360 /* Frameworks */,
+				1AFBB9842CDD259900881360 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AFBB9772CDD259900881360 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1ACAB8172CC2CFD000115F09 /* SwiftCV */,
+			);
+			name = Release;
+			packageProductDependencies = (
+				1AFBB9782CDD259900881360 /* ChemaUtils */,
+				1AFBB9792CDD259900881360 /* ChemaUtils */,
+				1AFBB97A2CDD259900881360 /* ChemaUtils */,
+				1AFBB97B2CDD259900881360 /* ChemaUtils */,
+				1AFBB97C2CDD259900881360 /* ChemaUtils */,
+			);
+			productName = SwiftCV;
+			productReference = 1AFBB9882CDD259900881360 /* My CV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +256,7 @@
 			targets = (
 				1ACAB8142CC2CFD000115F09 /* SwiftCV */,
 				1AAF779C2CC55F6D00684251 /* SwiftCVTests */,
+				1AFBB9762CDD259900881360 /* Release */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +270,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1ACAB8132CC2CFD000115F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AFBB9842CDD259900881360 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,6 +300,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1AFBB97D2CDD259900881360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +316,10 @@
 			targetProxy = 1AAF77A12CC55F6D00684251 /* PBXContainerItemProxy */;
 		};
 		1AB1567C2CC570B9004BF111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1AB1567B2CC570B9004BF111 /* SwiftLintBuildToolPlugin */;
+		};
+		1AFBB9772CDD259900881360 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 1AB1567B2CC570B9004BF111 /* SwiftLintBuildToolPlugin */;
 		};
@@ -304,10 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85YP73WK35;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftCV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -320,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCV;
+				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -338,10 +414,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85YP73WK35;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftCV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -354,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appoteosis.SwiftCV;
+				PRODUCT_BUNDLE_IDENTIFIER = test.SwiftCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -490,6 +566,78 @@
 			};
 			name = Release;
 		};
+		1AFBB9862CDD259900881360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 1ACAB8172CC2CFD000115F09 /* SwiftCV */;
+			baseConfigurationReferenceRelativePath = Resources/Config.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "$(CODE_SIGN_IDENTITY_DEBUG)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Release-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_DEBUG)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1AFBB9872CDD259900881360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 1ACAB8172CC2CFD000115F09 /* SwiftCV */;
+			baseConfigurationReferenceRelativePath = Resources/Config.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "$(CODE_SIGN_IDENTITY_RELEASE)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Release-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(MARKETING_VERSION)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_RELEASE)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +664,15 @@
 			buildConfigurations = (
 				1ACAB8292CC2CFD300115F09 /* Debug */,
 				1ACAB82A2CC2CFD300115F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AFBB9852CDD259900881360 /* Build configuration list for PBXNativeTarget "Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AFBB9862CDD259900881360 /* Debug */,
+				1AFBB9872CDD259900881360 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -560,6 +717,26 @@
 			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 		1AB828DF2CC3BA150008F241 /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1AFBB9782CDD259900881360 /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1AFBB9792CDD259900881360 /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1AFBB97A2CDD259900881360 /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1AFBB97B2CDD259900881360 /* ChemaUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChemaUtils;
+		};
+		1AFBB97C2CDD259900881360 /* ChemaUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ChemaUtils;
 		};
