@@ -16,13 +16,13 @@ final class ExperiencePresenterTests: XCTestCase {
     private var mockProvider = JobsProviderMock()
 
     override func setUp() {
-        DefaultDependencyResolver.shared.clear()
         super.setUp()
         setupDependencies()
     }
 
     override func tearDown() {
         super.tearDown()
+        DefaultDependencyResolver.shared.clear()
         sut = nil
     }
 

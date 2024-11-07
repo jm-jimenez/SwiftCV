@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResumeViewController" customModule="SwiftCV" customModuleProvider="target">
             <connections>
+                <outlet property="aboutMeContentLbl" destination="BUp-xF-NFE" id="maz-7P-9eF"/>
+                <outlet property="aboutMeLbl" destination="agH-nU-3dB" id="6Kj-um-PlT"/>
                 <outlet property="fullName" destination="BjR-GI-zvb" id="7mU-ZL-okp"/>
                 <outlet property="imageView" destination="D2l-CT-Z6g" id="2wZ-7U-DDT"/>
                 <outlet property="jobExperienceBtn" destination="U8r-kc-BhM" id="EQp-Oh-tbq"/>
