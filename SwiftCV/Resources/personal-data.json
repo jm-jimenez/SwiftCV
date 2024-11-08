@@ -1,0 +1,67 @@
+{
+    "en": [
+        {
+            "field": "Name",
+            "value": "José María"
+        },
+        {
+            "field": "Surname",
+            "value": "Jiménez Pérez"
+        },
+        {
+            "field": "Birth",
+            "value": "03-05-1988"
+        },
+        {
+            "field": "Address",
+            "value": "**** 5"
+        },
+        {
+            "field": "City",
+            "value": "28*** ***drid"
+        },
+        {
+            "field": "Email",
+            "value": "josemariajimenezperez@gmail.com",
+            "action": "OPEN_EMAIL"
+        },
+        {
+            "field": "GitHub",
+            "value": "https://www.github.com/jm-jimenez",
+            "action": "OPEN_URL"
+        }
+    ],
+
+    "es": [
+        {
+            "field": "Nombre",
+            "value": "José María"
+        },
+        {
+            "field": "Apellidos",
+            "value": "Jiménez Pérez"
+        },
+        {
+            "field": "Fecha nacimiento",
+            "value": "03-05-1988"
+        },
+        {
+            "field": "Dirección",
+            "value": "**** 5"
+        },
+        {
+            "field": "Ciudad",
+            "value": "28*** ***drid"
+        },
+        {
+            "field": "Email",
+            "value": "josemariajimenezperez@gmail.com",
+            "action": "OPEN_EMAIL"
+        },
+        {
+            "field": "GitHub",
+            "value": "https://www.github.com/jm-jimenez",
+            "action": "OPEN_URL"
+        }
+    ]
+}

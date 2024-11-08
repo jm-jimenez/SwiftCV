@@ -9,7 +9,7 @@ import UIKit
 import DependencyResolver
 
 protocol PersonalDataView: AnyObject {
-
+    func updatePersonalData(_ models: [PersonalDataModel])
 }
 
 final class PersonalDataViewController: UIViewController {
@@ -27,43 +27,41 @@ final class PersonalDataViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private let data: [(key: String, value: String)] = [
-        ("Name", "José María"),
-        ("Surname", "Jiménez Pérez"),
-        ("Birth", "03-05-1988"),
-        ("Address", "**** 5"),
-        ("City", "28*** ***drid"),
-        ("Email", "josemariajimenezperez@gmail.com"),
-        ("GitHub", "https://www.github.com/jm-jimenez")
-    ]
+    private var models: [PersonalDataModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
         setupTableView()
+        presenter.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        setupNavigationBar()
     }
 }
 
 private extension PersonalDataViewController {
     func setupNavigationBar() {
         title = String(localized: "My personal data")
+        navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "PersonalDataCell", bundle: nil), forCellReuseIdentifier: "cellReuse")
     }
 
     func configureCell(cell: UITableViewCell, indexPath: IndexPath) -> UITableViewCell {
         var conf = cell.defaultContentConfiguration()
-        conf.text = data[indexPath.item].key
-        conf.secondaryText = data[indexPath.item].value
+        conf.text = models[indexPath.item].key
+        conf.secondaryText = models[indexPath.item].value
         cell.contentConfiguration = conf
         return cell
     }
@@ -71,16 +69,19 @@ private extension PersonalDataViewController {
 
 extension PersonalDataViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        models.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse") else {
-            let cell = UITableViewCell(style: .value2, reuseIdentifier: "cellReuse")
-            return configureCell(cell: cell, indexPath: indexPath)
-        }
-        return configureCell(cell: cell, indexPath: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuse", for: indexPath) as? PersonalDataCell
+        else { return UITableViewCell() }
+        cell.configure(with: models[indexPath.item])
+        return cell
     }
 }
 
-extension PersonalDataViewController: PersonalDataView { }
+extension PersonalDataViewController: PersonalDataView {
+    func updatePersonalData(_ models: [PersonalDataModel]) {
+        self.models = models
+    }
+}
