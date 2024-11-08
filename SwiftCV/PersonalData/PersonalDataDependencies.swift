@@ -8,5 +8,8 @@
 import DependencyResolver
 
 struct PersonalDataDependencies {
-    func registerDependencies() {}
+    func registerDependencies() {
+        registerDependency(PersonalDataProvider.self, LocalJsonPersonalDataProvider.self)
+        registerDependency(GetPersonalDataUseCase.self, GetPersonalDataUseCase.self)
+    }
 }

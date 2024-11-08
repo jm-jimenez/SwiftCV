@@ -57,6 +57,9 @@ private extension ExpandableJobCell {
     func setupViews() {
         containerView.isHidden = true
         descriptionLabel.isHidden = false
+        contentView.addGestureRecognizer(
+            UITapGestureRecognizer(target: self, action: #selector(didTapToggle))
+        )
     }
 
     func createProjectViews(_ job: JobModel) {

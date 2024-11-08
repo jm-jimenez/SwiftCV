@@ -36,20 +36,20 @@ final class ExperienceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
         setupTableView()
         presenter.viewDidLoad()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        setupNavigationBar()
     }
 }
 
 private extension ExperienceViewController {
     func setupNavigationBar() {
         title = String(localized: "My job experience")
+        navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
